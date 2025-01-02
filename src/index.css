@@ -1,3 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,44 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.scale {
+  @apply hover:scale-110 duration-300 ease-in-out
+}
+
+.projcard {
+  @apply rounded-2xl bg-white p-3 mb-5 mx-5 hover:scale-105 duration-300 ease-in-out hover:shadow-lg hover:shadow-gray-800 hover:bg-gradient-to-b hover:from-white hover:to-[#0D4BAF] hover:bg-clip-border
+}
+
+.projimg {
+  @apply size-60 md:size-96 rounded-2xl
+}
+
+.navreslinks {
+  @apply border-b border-gray-400 py-3 duration-500 hover:text-[#8A00C2]
+}
+
+.servicediv {
+  @apply w-[35%] flex flex-col items-center
+}
+
+.textgrad1 {
+  @apply text-transparent bg-gradient-to-r from-black to-[#8CA9D9] bg-clip-text
+}
+
+.textgrad2 {
+  @apply text-transparent bg-gradient-to-r from-white to-[#0D4BAF] bg-clip-text
+}
+
+.textgrad3 {
+  @apply text-transparent bg-gradient-to-r from-white to-[#799BD3] bg-clip-text
+}
+
+.contactinp {
+  @apply mb-5 md:mb-0 text-white p-3 outline-none bg-[#d9d9d9] bg-opacity-25 placeholder:text-white placeholder:opacity-20 placeholder:text-xl focus:border-2 focus:border-white
+}
+
+.footerlinks {
+  @apply text-2xl md:text-2xl mb-3
 }
