@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/api/contact", 
-            "destination": "https://nexgendesignsbackend.vercel.app/api/contact"
+            "source": "/api/:path*", 
+            "destination": "https://nexgendesignsbackend.vercel.app/api/:path*"
         }
     ]
 }
