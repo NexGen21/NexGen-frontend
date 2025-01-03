@@ -31,6 +31,7 @@ function App() {
     const contact = { name, email, subject, msg };
     const response = await fetch('https://nexgenapi.vercel.app/api/contact', {
       method: 'POST',
+      mode: 'no-cors',
       body: JSON.stringify(contact),
       headers: {
         'Content-Type': 'application/json'
