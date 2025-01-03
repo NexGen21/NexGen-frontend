@@ -29,7 +29,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const contact = { name, email, subject, msg };
-    const response = await fetch('https://nexgenapi.vercel.app/api/contact', {
+    const response = await fetch('/api/contact', {
       method: 'POST',
       mode: 'no-cors',
       headers: {
@@ -37,13 +37,12 @@ function App() {
       },
       body: JSON.stringify(contact)
     })
-
+    const json = await response.json()
     if(!response.ok) {
       setError(json.error)
       setEmptyFields(json.emptyFields)
       toast.error(json.error)
     }
-    const json = await response.json()
     if(response.ok) {
       setName('');
       setEmail('');
