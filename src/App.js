@@ -32,13 +32,13 @@ function App() {
     const response = await fetch('https://nexgenapi.vercel.app/api/contact', {
       method: 'POST',
       mode: 'no-cors',
+      body: JSON.stringify(contact),
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(contact)
     })
-    console.log(response);
     const json = await response.json()
+    console.log(json);
     if(!response.ok) {
       setError(json.error)
       setEmptyFields(json.emptyFields)
