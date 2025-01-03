@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/:path*", 
+            "destination": "https://nexgendesignsbackend.vercel.app/api/:path*"
+        }
+    ]
+}
