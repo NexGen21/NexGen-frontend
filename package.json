@@ -1,5 +1,5 @@
 {
-  "proxy": "https://nexgendesignsbackend.vercel.app/api/",
+  "proxy": "https://nexgenapi.vercel.app/api/",
   "name": "startupweb",
   "version": "0.1.0",
   "private": true,
