@@ -2,11 +2,10 @@ import './App.css';
 import logo from './images/logo.png'
 import whatsapp from './images/whatsapp.png'
 import homoetrectus from './images/homoetrectus.jpg'
+import testimonial1 from './images/testimonial1.png'
+import testimonial2 from './images/testimonial2.png'
 import service1 from './images/Design.svg'
 import service2 from './images/Develop.svg'
-import computer from './images/computer.jpg'
-import mobile from './images/mobi.jpg'
-import analysis from './images/analysis.jpg'
 import arya1 from './images/Arya_1.png'
 import arya2 from './images/Arya_2.png'
 import niral1 from './images/Niral_1.png'
@@ -93,7 +92,7 @@ function App() {
                   <a className='navreslinks' href="#section-projects">Projects</a>
                   <a className='navreslinks' href="#section-about">About</a>
                   <a className='navreslinks' href="#section-services">Services</a>
-                  <a className='navreslinks' href="#section-contact">Contact</a>
+                  <a className='navreslinks' href="https://wa.me/918788764671?text=">Contact</a>
                 </div>
               </div>
 
@@ -106,7 +105,7 @@ function App() {
                   <a href="#section-projects">Projects</a>
                   <a href="#section-about">About</a>
                   <a href="#section-services">Services</a>
-                  <a href="#section-contact">
+                  <a href="https://wa.me/918788764671?text=">
                     <button class="btn btn-primary animate-floatbtn hover:shadow-md hover:shadow-[#0D4BAF]">Contact</button>
                   </a>
                 </div>
@@ -146,7 +145,7 @@ function App() {
         </header>
 
         <section id='section-projects' className='projects'>
-          <h1 className="section-heading text-center w-fit mx-auto bg-gradient-to-r from-[#ffffff] to-[#8CA9D9] text-transparent bg-clip-text">Projects</h1>
+          <h1 className="font-medium section-heading text-center w-fit mx-auto bg-gradient-to-r from-[#ffffff] to-[#8CA9D9] text-transparent bg-clip-text">Projects</h1>
           {/* <p className='w-3/4 mx-auto mt-8 lg:text-xl'>Check out our exciting projects! We've poured our creativity and skills into each one to bring impactful solutions to life.</p> */}
           <div className='slider'>
             <div className='slide-track flex w-full mx-auto mt-5'>
@@ -219,7 +218,7 @@ function App() {
 
     <section class="services" id="section-services">
         <div class="container">
-            <h1 class="w-[70%] md:w-1/2 mx-auto section-heading text-transparent bg-gradient-to-r from-white to-[#0D4BAF] bg-clip-text text-center"><span>Our</span> Services</h1>
+            <h1 class="w-[70%] md:w-1/2 mx-auto section-heading text-transparent bg-gradient-to-r from-white to-[#0D4BAF] bg-clip-text text-center font-medium"><span>Our</span> Services</h1>
             {/* <p className="md:text-lg">We specialize in the following services:</p> */}
             <div class="w-3/4 md:flex-row flex-col items-center md:w-1/2 flex justify-between mx-auto mt-8">
                 {/* <div class="card">
@@ -263,10 +262,10 @@ function App() {
             </button> 
         </a>   
     </section>
-    <section class="contact" id="section-contact">
+    {/* <section class="contact" id="section-contact">
         <div class="container2">
-            <h1 class="section-heading w-[77%] md:w-[64%] mx-auto text-white">Love to hear from you, <br />Get in touch!</h1>
-            <form className="mt-8" onSubmit={handleSubmit}>
+            <h1 class="section-heading w-[77%] md:w-[64%] mx-auto text-white">Love to hear from you, <br />Get in touch!</h1> */}
+            {/* <form className="mt-8" onSubmit={handleSubmit}>
               <div class="md:grid grid-cols-2 gap-x-2 gap-y-8 w-[80%] mx-auto">
                 <input type="text" className='contactinp w-full md:w-[60%] mx-auto' placeholder="Name*" onChange={(e) => setName(e.target.value)} value={name}/>
                 <input type="email" className='contactinp w-full md:w-[60%]' placeholder="Email*" onChange={(e) => setEmail(e.target.value)} value={email}/>
@@ -276,9 +275,9 @@ function App() {
                   <div className='flex md:justify-end pr-4 w-full mt-6'>
                     <button type='reset' className='scale rounded-xl hover:border-2 text-white p-3 text-xl textgrad3 mr-8' onClick={handleReset}>Reset</button>
                     <button class="scale border-2 rounded-xl textgrad3 py-3 px-5 text-xl text-white flex items-center" onClick={handleSubmit}>
-                      {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                      </svg> */}
+                      </svg>
                       Send
                     </button>
                   </div>
@@ -286,20 +285,47 @@ function App() {
                 </div>
               </div>
               <div class="input-wrap-2">
-                  {/* <input type="text" placeholder="Your Subject..." onChange={(e) => setSubject(e.target.value)} value={subject}/>
-                  <textarea name=""id="" cols="5" rows="5" placeholder="Your Message..." onChange={(e) => setMsg(e.target.value)} value={msg}></textarea> */}
+                  <input type="text" placeholder="Your Subject..." onChange={(e) => setSubject(e.target.value)} value={subject}/>
+                  <textarea name=""id="" cols="5" rows="5" placeholder="Your Message..." onChange={(e) => setMsg(e.target.value)} value={msg}></textarea>
               </div>  
-              {/* <div class="btn-wrap">
+              <div class="btn-wrap">
                   <button class="btn btn-primary flex items-center mx-auto w-[60%] md:w-auto" onClick={handleSubmit}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 mr-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
 </svg>
                     Drop a Message
                   </button>
-              </div> */}
+              </div>
             </form>  
 
         </div>
+    </section> */}
+
+    <section className='section-testimonials md:py-12'>
+      <h1 className='text-4xl md:text-5xl font-medium md:w-1/2 text-center mx-auto text-transparent bg-gradient-to-r from-white to-[#8CA9D9] bg-clip-text'>Testimonials</h1>
+
+      <div className='md:flex justify-evenly w-3/4 mx-auto mt-10 md:mt-16'>
+        <div className='testimonials'>
+          <div className='testheader'>
+            <img className='testimonialimg' src={testimonial1} alt="" />
+            <div>
+              <h2 className='testimonialtitle'>Raghavendra Nair</h2>
+              <p className='testdesignation'>Founder, Vertex Innovates</p>
+            </div>
+          </div>
+          <p className='testimonialdesc'>"Working with NexGen Designs was such a smooth experience. They truly understood our vision and brought it to life with stunning creativity. The team was super responsive and went above and beyond to meet our needs. We couldn’t be happier with the final product—it’s simply perfect!"</p>
+        </div>
+        <div className='testimonials'>
+        <div className='testheader'>
+          <img className='testimonialimg' src={testimonial2} alt="" />
+          <div>
+            <h2 className='testimonialtitle'>Aditi Menon</h2>
+            <p className='testdesignation'>Marketing Strategist at Lumara Solutions</p>
+          </div>
+          </div>
+          <p className='testimonialdesc'>"NexGen Designs completely transformed our brand’s online presence. Their attention to detail and innovative ideas blew us away. The website they created is not only beautiful but also incredibly user-friendly. We’ve already received so many compliments. Thank you, NexGen, for making our dream a reality!"</p>
+        </div>
+      </div>
     </section>
 
     <div className='flex flex-col md:flex-row justify-evenly items-center py-5'>
