@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+.App {
+  font-family: 'Lexend', sans-serif;
+  position: relative;
+}
+
+.titlefont {
+  font-family: 'Geist', sans-serif;
+  font-weight: 600;
+}
+
+.cursor{
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  /* font-size: 30px; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+.cursor:nth-child(2) {
+  margin-bottom: 4rem;
+}
+
+.line1 {
+  border-right-color: rgba(17,17,17,0.9);
+  animation: typewriter1 2s steps(30, end) 1s 1 normal both,
+  blinkingCursor 900ms steps(30, end) 3;
+}
+
+.line2 {
+  border-right-color: rgba(17,17,17,0.9);
+  animation: typewriter2 2s steps(30, end) 1s 1 normal both,
+    blinkingCursor 900ms steps(30, end) infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+#section-banner {
+  background-image: url('./images/bannerbg.png');
+}
+
+@keyframes typewriter1 {
+  from { width: 0; }
+  to { width: 60%; }
+}
+
+@keyframes typewriter2 {
+  from { width: 0; }
+  to { width: 48%; }
+}
+
+@keyframes blinkingCursor {
+  from { border-right-color: rgba(17,17,17,0.9); }
+  to { border-right-color: rgba(255,255,255,.75); }
+}
+
+section {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .cursor:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+
+  .line1 {
+    border-right-color: rgba(17,17,17,0.9);
+    animation: typewriterres1 2s steps(30, end) 1s 1 normal both,
+    blinkingCursor 900ms steps(30, end) 3;
+  }
+  
+  .line2 {
+    border-right-color: rgba(17,17,17,0.9);
+    animation: typewriterres2 2s steps(30, end) 1s 1 normal both,
+      blinkingCursor 900ms steps(30, end) infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  
+  @keyframes typewriterres1 {
+    from { width: 0; }
+    to { width: 80%; }
+  }
+  
+  @keyframes typewriterres2 {
+    from { width: 0; }
+    to { width: 70%; }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .cursor:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+
+  .line1 {
+    border-right-color: rgba(17,17,17,0.9);
+    animation: typewriterres1 2s steps(30, end) 1s 1 normal both,
+    blinkingCursor 900ms steps(30, end) 3;
+  }
+  
+  .line2 {
+    border-right-color: rgba(17,17,17,0.9);
+    animation: typewriterres2 2s steps(30, end) 1s 1 normal both,
+      blinkingCursor 900ms steps(30, end) infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  
+  @keyframes typewriterres1 {
+    from { width: 0; }
+    to { width: 70%; }
+  }
+  
+  @keyframes typewriterres2 {
+    from { width: 0; }
+    to { width: 55%; }
+  }
+}
