@@ -98,9 +98,9 @@ const Home = () => {
     <div>
     {/* Home */}
       <section className='section-home pt-28 md:pt-56'>
-        <h1 className='cursor line1 pb-3 text-xl md:text-4xl lg:text-5xl xl:text-6xl titlefont'>From Concept To Creation,</h1>
+        <h1 className='cursor line1 md:pb-3 text-xl md:text-4xl lg:text-5xl xl:text-6xl titlefont'>From Concept To Creation,</h1>
         <h1 className='cursor line2 mb-8 md:mb-16 text-xl md:text-4xl lg:text-5xl xl:text-6xl text-transparent bg-gradient-to-r from-[#5D95FF] to-white bg-clip-text titlefont'>We've Got You Covered</h1>
-        <ScrollLink to="section-services" smooth={true} duration={800} className='hover:opacity-90 mt-10 bg-gradient-to-r from-[#3E80F6] to-[#6D6EF7] md:text-3xl py-6 px-8 rounded-2xl cursor-pointer'>Get Started</ScrollLink>
+        <ScrollLink to="section-services" smooth={true} duration={800} className='hover:opacity-90 mt-10 bg-gradient-to-r from-[#3E80F6] to-[#6D6EF7] md:text-3xl py-3 md:py-6 px-7 md:px-8 rounded-2xl cursor-pointer'>Get Started</ScrollLink>
       </section>
 
       {/* Services */}
